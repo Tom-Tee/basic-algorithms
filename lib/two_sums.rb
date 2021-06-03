@@ -6,6 +6,7 @@ def two_sum(nums, target)
       if (i + nums[sum+1]) == target
         array << sum
         array << sum +1
+        break
       else
       sum += 1
     end
@@ -13,9 +14,7 @@ def two_sum(nums, target)
   array
 end
 
-
 array = [2, 7, 11, 15]
-array_2 = [3,2,4]
+array_2 = [3, 2, 4]
 
-
-p two_sum(array, 9)
+p two_sum([3, 3], 6)
