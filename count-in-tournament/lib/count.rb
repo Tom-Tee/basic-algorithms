@@ -1,17 +1,25 @@
 def number_of_matches(n)
-  user_input = n
-  matches = 0
-  until user_input == 0
-    if n % 2 == 0
-      matches += (n / 2)
-      user_input -= (n /2)
-    elsif n % 2 != 0
-      user_input -= 1
-      matches + 1
-      user_input -= (n /2)
+    count = 0
+    while n > 1
+        if n % 2 == 0
+            n = n/2
+            count += n
+        else
+            count += n/2
+            n = n/2 + 1
+        end
     end
-  end
-    matches
+    count
 end
 
-p number_of_matches(7)
+p number_of_matches(6)
+
+# ROUND ONE
+# DIVIDE THE AMOUNT OF TEAMS BY 2
+
+# IF INTEGER IS EVEN WE GO TO NEXT ROUND
+# MATCHES ARE PLAYED AND THE DIVISION OF 2
+
+# IF INTEGER IS ODD ONE TEAM GOES TO NEXT AROUND AND WE DIVIDE BY 2
+
+
