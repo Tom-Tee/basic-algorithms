@@ -1,15 +1,15 @@
 def number_of_matches(n)
-    count = 0
-    while n > 1
-        if n % 2 == 0
-            n = n/2
-            count += n
-        else
-            count += n/2
-            n = n/2 + 1
-        end
+  count = 0
+  while n > 1
+    if n % 2 == 0
+      n = n/2
+      count += n
+    else
+      count += n/2
+      n = n/2 + 1
     end
-    count
+  end
+  count
 end
 
 p number_of_matches(6)
