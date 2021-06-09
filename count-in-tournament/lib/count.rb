@@ -12,7 +12,7 @@ def number_of_matches(n)
   count
 end
 
-p number_of_matches(6)
+p number_of_arrmatches(6)
 
 # ROUND ONE
 # DIVIDE THE AMOUNT OF TEAMS BY 2
