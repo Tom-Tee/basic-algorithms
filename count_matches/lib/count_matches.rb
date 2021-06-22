@@ -1,5 +1,5 @@
 def count_matches(items, rule_key, rule_value)
-
+  "test"
 end
 
 items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]]
