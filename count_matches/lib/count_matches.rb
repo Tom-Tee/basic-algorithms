@@ -1,11 +1,7 @@
 def count_matches(items, rule_key, rule_value)
   a = []
   items.each do |var|
-    var.each do |item|
-      if item == rule_key || item == rule_value
-        a << var
-      end
-    end
+    var.each { |item| a << var if item == rule_key || item == rule_value }
   end
   a.length
 end
