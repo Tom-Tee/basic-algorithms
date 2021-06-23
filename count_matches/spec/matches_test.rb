@@ -7,6 +7,6 @@ describe "Count Matches" do
     let(:rule_value) { ["silver"] }
 
   it "should take from the rule key and value and return if any matches are there any" do
-    expect(count_matches(arrays, rule_key, rule_value)).to eq(["computer", "silver", "lenovo"])
-    end
+    expect(count_matches(arrays, rule_key, rule_value)).to eq(1)
   end
+end

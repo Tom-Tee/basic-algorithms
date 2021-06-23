@@ -1,11 +1,17 @@
 def count_matches(items, rule_key, rule_value)
-  "test"
+  a = []
+  items.each do |var|
+    var.each do |item|
+      if item == rule_key || item == rule_value
+        a << var
+      end
+    end
+  end
+  a.length
 end
 
-items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]]
+items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"], ["phone", "gold", "iphone"]]
+rule_key = "color"
+rule_value = "silver"
 
-ruleKey = "color"
-
-ruleValue = "silver"
-
-count_matches(items, ruleKey, ruleValue)
+p count_matches(items, rule_key, rule_value)
